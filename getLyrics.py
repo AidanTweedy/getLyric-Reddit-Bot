@@ -6,7 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 
 def findLyrics(artist, song):
-    error = "Hey there! Something appears to have gone wrong with fetching the lyrics. Please use the format **'<ARTIST>-<SONG>'**. Be cautious about the word 'The' in band names."
+    error = "Hey there! Something appears to have gone wrong with fetching the lyrics. 
+    Please use the format **'<ARTIST>-<SONG>'**. Be cautious about the word 'The' in band names."
     art = str(artist.lower())
     son = str(song.lower())
     url = 'https://www.azlyrics.com/lyrics/' + art + '/' + son
